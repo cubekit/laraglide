@@ -35,7 +35,7 @@ class LaraglideServiceProvider extends ServiceProvider {
             return ServerFactory::create([
                 'source'            => $disksProvider->getSourceFilesystem(),
                 'cache'             => $disksProvider->getCacheFileSystem(),
-                'cache_path_prefix' => config('laraglide.disks.cache_path_prefix')
+                'cache_path_prefix' => config('cubekit.laraglide.disks.cache_path_prefix')
             ]);
         });
 

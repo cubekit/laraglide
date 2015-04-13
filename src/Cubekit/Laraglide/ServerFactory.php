@@ -1,9 +1,8 @@
 <?php namespace Cubekit\Laraglide;
 
-//use App, Config;
-use League\Glide\ServerFactory as GliderServerFactory;
+use League\Glide\ServerFactory as GlideServerFactory;
 
-class ServerFactory extends GliderServerFactory {
+class ServerFactory extends GlideServerFactory {
 
     public function getServer()
     {
