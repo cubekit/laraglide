@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Cubekit\\Laraglide": "src/Cubekit/Laraglide"
+            "Cubekit\\Laraglide\\": "src/Cubekit/Laraglide"
         }
     },
     "minimum-stability": "dev"
