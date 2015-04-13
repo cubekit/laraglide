@@ -13,9 +13,5 @@ function thumbnail($image, $params = null)
 
     $request = $server->makeImage($image, $params);
 
-    $rootUrl = str_finish( config('laraglide.rootUrl'), '/' );
-
-    $path = $server->getCachePath($request);
-
-    return "{$rootUrl}{$path}";
+    return "/" . $server->getCachePath($request);
 }
