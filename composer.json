@@ -1,6 +1,7 @@
 {
     "name": "cubekit/laraglide",
     "description": "",
+    "license":"MIT",
     "authors": [
         {
             "name": "Anatoliy Arkhipov",
