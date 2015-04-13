@@ -14,6 +14,10 @@ class LaraglideServiceProvider extends ServiceProvider {
     public function boot()
     {
         require_once __DIR__ . '/helpers.php';
+
+        $this->publishes([
+            __DIR__ . '/../../config/config.php' => config_path('cubekit/laraglide.php')
+        ]);
     }
 
 	/**
