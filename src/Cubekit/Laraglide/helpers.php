@@ -13,5 +13,10 @@ function thumbnail($image, $params = null)
 
     $request = $server->makeImage($image, $params);
 
-    return "/" . $server->getCachePath($request);
+    $url = $server->getCachePath($request);
+
+    $rootUrl = config('cubekit.laraglide.rootUrl') ?: '/';
+    $rootUrl = str_finish($rootUrl, '/');
+
+    return "{$rootUrl}{$url}";
 }
